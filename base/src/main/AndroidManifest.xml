@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.parting_soul.base">
+
+
+    <application>
+        <activity android:name="com.parting_soul.base.activity.SchemaActivity">
+            <intent-filter>
+                <data
+                    android:host="parting_soul.com"
+                    android:scheme="arouter" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
